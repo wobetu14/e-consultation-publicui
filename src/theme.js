@@ -4,6 +4,10 @@ import { color, palette } from "@mui/system";
 import { colors } from "@mui/material";
 import { light } from "@mui/material/styles/createPalette";
 
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import cookies from 'js-cookie';
+
 // create color design tokens
 
 export const tokens = (mode) => ({
@@ -285,12 +289,16 @@ export const themeSettings=(mode)=>{
     };
 };
 
+// App Langauges
+
+
 // create react Context for color mode
 export const ColorModeContext=createContext({
     toggleColorMode:()=>{
 
     }
 });
+
 
 export const useMode=()=>{
     const [mode, setMode]=useState("light");
@@ -304,4 +312,43 @@ export const useMode=()=>{
 
         const theme=useMemo(()=>createTheme(themeSettings(mode)), [mode]);
         return [theme, colorMode];
+}
+
+export const LangaugeContext=createContext(null);
+export const useLanguage=()=>{
+  const appLanguages=[
+    {
+      code:'en',
+      name:'English',
+      country_code:'English'
+    },
+  
+    {
+      code:'am',
+      name:'አማርኛ',
+      country_code:'Ethiopia'
+    },
+    {
+      code:'oro',
+      name:'Afan Oromo',
+      country_code:'Ethiopia'
+    },
+  
+    {
+      code:'tg',
+      name:'ትግርኛ',
+      country_code:'Ethiopia'
+    },
+  ]
+
+  const currentLanguageCode=cookies.get('i18next') || 'en'
+  const [selectedLanguage, setSelectedLanguage]=useState(currentLanguageCode)
+  const currentLanguage=appLanguages.find(l=>l.code===currentLanguageCode)
+  const {t}=useTranslation()
+
+  const changeLocale=useMemo((langCode)=>{
+      setSelectedLanguage(i18next.changeLanguage(langCode))
+  },[])
+
+  return [selectedLanguage, changeLocale,t, currentLanguage, appLanguages]
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Typography, Box, useTheme } from '@mui/material'
 import { tokens } from '../theme'
-import { TitleOutlined } from '@mui/icons-material';
 
 import cookies from 'js-cookie';
 import i18next from 'i18next';

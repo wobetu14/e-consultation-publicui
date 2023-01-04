@@ -4,5 +4,15 @@
     "dashboard":"DASHBOARD",
     "dashboard_greeting":"Welcome to your Dashboard",
     "bar_chart":"Bar Chart",
-    "simple_bar_chart":"Simple Bar Chart"
+    "simple_bar_chart":"Simple Bar Chart",
+    "home":"Home",
+    "about":"About",
+    "contacts":"Contacts",
+    "faq":"Frequently asked questions",
+    "sign_in":"Sign In",
+    "sign_up":"Sign Up",
+    "fdre":"The Federal Democratic Republic of Ethiopia",
+    "e_consultation_portal":"Public Consultation Portal",
+    "ethiopia":"ETHIOPIA",
+    "search_documents":"Search documents"
 }

@@ -4,5 +4,15 @@
     "dashboard":"ዳሽቦርድ",
     "dashboard_greeting":"እንቋዕ ናብ ዳሽቦርድኩም ብደሓን መጻእኩም",
     "bar_chart":"ባር ቻርት",
-    "simple_bar_chart":"ቀሊል ባር ቻርት"
+    "simple_bar_chart":"ቀሊል ባር ቻርት",
+    "home":"መእተዊ ገጽ",
+    "about":"ብዛዕባና ዝምልከት",
+    "contacts":"ኣድራሻታት",
+    "faq":"ብተደጋጋሚ ዝሕተቱ ሕቶታት",
+    "sign_in":"ኣእትው",
+    "sign_up":"ኣካውንት ምፍጣር",
+    "fdre":"መንግስቲ ፌደራላዊት ዲሞክራስያዊት ሪፓብሊክ ኢትዮጵያ",
+    "e_consultation_portal":"መድረኽ ምምኽኻር ህዝቢ",
+    "ethiopia":"ኢትዮጵያ",
+    "search_documents":"ሰነዳት ድለዩ"
 }
