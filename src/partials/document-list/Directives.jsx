@@ -15,7 +15,12 @@ const RegulationDocs = () => {
                 <List sx={{ width: '100%', maxWidth: 1000, bgcolor: 'background.paper' }}>
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>
-                        <Avatar alt="Remy Sharp"  src={Pics} />
+                        <img alt="Cindy Baker"  src={Pics} 
+                        style={{ 
+                            width:"50px", 
+                            height:"70px", 
+                            margin:"0 10px 0 0", 
+                            borderRadius:"3px" }} />
                         </ListItemAvatar>
                         <ListItemText
                         primary="Brunch this weekend?"
@@ -37,7 +42,12 @@ const RegulationDocs = () => {
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>
-                        <Avatar alt="Travis Howard" src={Pics} />
+                        <img alt="Cindy Baker"  src={Pics} 
+                        style={{ 
+                            width:"50px", 
+                            height:"70px", 
+                            margin:"0 10px 0 0", 
+                            borderRadius:"3px" }} />
                         </ListItemAvatar>
                         <ListItemText
                         primary="Summer BBQ"
@@ -58,9 +68,17 @@ const RegulationDocs = () => {
                     </ListItem>
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
+                        
                         <ListItemAvatar>
-                        <Avatar alt="Cindy Baker"  src={Pics} />
+                        <img alt="Cindy Baker" 
+                         src={Pics} 
+                         style={{ 
+                             width:"50px", 
+                             height:"70px",
+                             margin:"0 10px 0 0", 
+                              borderRadius:"3px" }} />
                         </ListItemAvatar>
+
                         <ListItemText
                         primary="Oui Oui"
                         secondary={

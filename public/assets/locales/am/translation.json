@@ -14,5 +14,9 @@
     "fdre":"የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ መንግስት",
     "e_consultation_portal":"የህዝባዊ ምክረ ሃሳብ መስጫ መድረክ",
     "ethiopia":"ኢትዮጵያ",
-    "search_documents":"ዶክመንቶችን ይፈልጉ"
+    "search_documents":"ሰነዶችን ያስሱ. (ሰነድ ሲያስሱ እንግሊዘኛ ቋንቋ ቢጠቀሙ ይመከራል)",
+    "regulations":"ደንቦች",
+    "directives":"መመሪያዎች",
+    "proclamations":"አዋጆች",
+    "open_for_comment":"ለአስተያየት ክፍት የሆኑ ሰነዶች"
 }

@@ -8,6 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { grey } from "@mui/material/colors";
 import HeroImage from "../images/hero.png"
 import { useTranslation } from "react-i18next";
+import {motion} from 'framer-motion'
 
 const Home = () => {
   const theme = useTheme();
@@ -16,6 +17,11 @@ const Home = () => {
 
   return (
     <Box margin="110px 0px">
+      <motion.span
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        transition={{ duration: 0.3 }}
+      >
       <Box sx={{ 
         backgroundImage:`url(${HeroImage})`,
         height:"55vh", 
@@ -43,30 +49,30 @@ const Home = () => {
           </Grid>
          </Grid>
 
-        <Grid container sx={{ paddingTop:"50px", margin:"20px", display:"flex", justifyContent:"space-between" }}>
+        <Grid container sx={{ paddingTop:"20px", margin:"20px", display:"flex", justifyContent:"space-between" }}>
           <Grid item xs={3} >
             <StatBox
                 title="16"
-                subtitle="Proclamations"
+                subtitle={t('proclamations')}
               />  
           </Grid>
 
           <Grid item xs={3}>
             <StatBox
                 title="23"
-                subtitle="Regulations"
+                subtitle={t('regulations')}
               />
           </Grid>
           <Grid item xs={3}>
             <StatBox
                 title="23"
-                subtitle="Directives"
+                subtitle={t('directives')}
               /> 
           </Grid>
           <Grid item xs={3}>
             <StatBox
                 title="36"
-                subtitle="Open for comment"
+                subtitle={t('open_for_comment')}
               /> 
           </Grid>
           </Grid>
@@ -81,8 +87,8 @@ const Home = () => {
             <RecentDocs />
           </Box>
         </Box>
-        
-      </Box>    
+      </motion.span>
+    </Box>    
   );
 };
 
