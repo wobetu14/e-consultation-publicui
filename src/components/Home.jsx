@@ -9,6 +9,7 @@ import { grey } from "@mui/material/colors";
 import HeroImage from "../images/hero.png"
 import { useTranslation } from "react-i18next";
 import {motion} from 'framer-motion'
+import Footer from "../partials/Footer";
 
 const Home = () => {
   const theme = useTheme();
@@ -86,6 +87,10 @@ const Home = () => {
             <RecentDocs />
             <RecentDocs />
           </Box>
+        </Box>
+
+        <Box>
+            <Footer />
         </Box>
       </motion.span>
     </Box>    
