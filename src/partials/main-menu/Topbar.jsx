@@ -91,8 +91,13 @@ const Topbar = ({menuItems}) => {
                             <DarkModeOutlinedIcon />
                         ):(
                             <LightModeOutlinedIcon />
-                        )}
+                        )} &nbsp;
+
+                        <Typography variant="body1" fontWeight={500}>
+                          Theme
+                        </Typography>
                     </IconButton>
+                    
                     <IconButton>
                         <LanguageButton />
                     </IconButton>

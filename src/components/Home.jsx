@@ -17,7 +17,7 @@ const Home = () => {
   const {t}=useTranslation()
 
   return (
-    <Box margin="110px 0px">
+    <Box margin="110px 0">
       <motion.span
         initial={{ opacity: 0}}
         animate={{ opacity: 1}}
@@ -50,7 +50,7 @@ const Home = () => {
           </Grid>
          </Grid>
 
-        <Grid container sx={{ paddingTop:"20px", margin:"20px", display:"flex", justifyContent:"space-between" }}>
+        <Grid container sx={{ paddingTop:"20px", margin:"5px", display:"flex", justifyContent:"space-between" }}>
           <Grid item xs={3} >
             <StatBox
                 title="16"

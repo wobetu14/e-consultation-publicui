@@ -1,6 +1,8 @@
 import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 import {motion} from 'framer-motion'
+import WelcomePage from './WelcomePage';
+
 
 const About = () => {
   return (
@@ -12,12 +14,14 @@ const About = () => {
       >
         <Grid container sx={{ paddingTop:"20px", margin:"20px", display:"flex", justifyContent:"space-between" }}>
         <Box>
-          <Typography variant="h4" sx={{ fontWeight:"600" }}>
-                About the e-Consultation portal
+          <Typography variant="h2" sx={{ fontWeight:"600" }}>
+            Welcome To Geeksforgeeks
             </Typography>
             <Typography variant="h4">
-              About page
+              <a href='#course'><button>Courses</button></a>
+              <a href='#article'><button>Articles</button></a>
             </Typography>
+            <WelcomePage />
           </Box>
           </Grid>
       </motion.span>

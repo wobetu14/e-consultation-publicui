@@ -6,13 +6,22 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import { Box, Grid, Paper } from '@mui/material';
+import { Box, Grid, Paper, Skeleton } from '@mui/material';
 import Pics from "../../images/fdreconstitution.jpeg"
 
 const RegulationDocs = () => {
+    const [loading, setLoading]=React.useState(true)
+
+    React.useEffect(()=>{
+        const loader=setTimeout(()=>{setLoading(false)}, 5000);
+        return () => clearTimeout(loader);
+    }, [])
   return (
             <Paper elevation={1}>
-                <List sx={{ width: '100%', maxWidth: 1000, bgcolor: 'background.paper' }}>
+                {loading ? (
+                    <Skeleton variant='rectangle' animation='wave' height={100} width="100%" />
+                ):(
+                    <List sx={{ width: '100%', maxWidth: 1000, bgcolor: 'background.paper' }}>
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>
                         <img alt="Cindy Baker" 
@@ -97,6 +106,7 @@ const RegulationDocs = () => {
                         />
                     </ListItem>
                 </List>
+                )}
             </Paper>
   );
 }

@@ -87,8 +87,8 @@ export default function LanguageButton() {
           onClick={handleToggle}
           sx={{ color:colors.grey[100] }}
         >
-          {currentLanguage.name} &nbsp;
-          <LanguageOutlined size="small" />
+          <LanguageOutlined size="small" />&nbsp;
+          {currentLanguage.name} 
           {/* <ArrowDropDownOutlined /> */}
         </Button>
       </ButtonGroup>
